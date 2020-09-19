@@ -13,6 +13,7 @@
 		D3717C1824CFE1D0003A5EE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3717C1624CFE1D0003A5EE6 /* Main.storyboard */; };
 		D3717C1A24CFE1D1003A5EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3717C1924CFE1D1003A5EE6 /* Assets.xcassets */; };
 		D3717C1D24CFE1D1003A5EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3717C1B24CFE1D1003A5EE6 /* LaunchScreen.storyboard */; };
+		D3717C2624CFE237003A5EE6 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3717C2524CFE237003A5EE6 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D3717C1924CFE1D1003A5EE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3717C1C24CFE1D1003A5EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3717C1E24CFE1D1003A5EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3717C2524CFE237003A5EE6 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D3717C0F24CFE1D0003A5EE6 /* CalcApp */ = {
 			isa = PBXGroup;
 			children = (
+				D3717C2424CFE207003A5EE6 /* Model */,
 				D3717C1024CFE1D0003A5EE6 /* AppDelegate.swift */,
 				D3717C1224CFE1D0003A5EE6 /* SceneDelegate.swift */,
 				D3717C1424CFE1D0003A5EE6 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				D3717C1E24CFE1D1003A5EE6 /* Info.plist */,
 			);
 			path = CalcApp;
+			sourceTree = "<group>";
+		};
+		D3717C2424CFE207003A5EE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3717C2524CFE237003A5EE6 /* Car.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				D3717C1524CFE1D0003A5EE6 /* ViewController.swift in Sources */,
 				D3717C1124CFE1D0003A5EE6 /* AppDelegate.swift in Sources */,
+				D3717C2624CFE237003A5EE6 /* Car.swift in Sources */,
 				D3717C1324CFE1D0003A5EE6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.takumi.yam.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.takumi.yam.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
